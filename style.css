@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* Import Google Fonts - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root{
     --color-primary: #6C9BCF;
@@ -48,7 +49,7 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.88rem;
     user-select: none;
     overflow-x: hidden;
@@ -153,72 +154,12 @@ aside .sidebar{
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
     border-radius: 15px;
-    height: 88vh;
+    height: 50vh;
     position: relative;
     top: 1.5rem;
     transition: all 0.3s ease;
 }
 
-aside .sidebar:hover{
-    box-shadow: none;
-}
-
-aside .sidebar a{
-    display: flex;
-    align-items: center;
-    color: var(--color-info-dark);
-    height: 3.7rem;
-    gap: 1rem;
-    position: relative;
-    margin-left: 2rem;
-    transition: all 0.3s ease;
-}
-
-aside .sidebar a span{
-    font-size: 1.6rem;
-    transition: all 0.3s ease;
-}
-
-aside .sidebar a:last-child{
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-}
-
-aside .sidebar a.active{
-    width: 100%;
-    color: var(--color-primary);
-    background-color: var(--color-light);
-    margin-left: 0;
-}
-
-aside .sidebar a.active::before{
-    content: '';
-    width: 6px;
-    height: 18px;
-    background-color: var(--color-primary);
-}
-
-aside .sidebar a.active span{
-    color: var(--color-primary);
-    margin-left: calc(1rem - 3px);
-}
-
-aside .sidebar a:hover{
-    color: var(--color-primary);
-}
-
-aside .sidebar a:hover span{
-    margin-left: 0.6rem;
-}
-
-aside .sidebar .message-count{
-    background-color: var(--color-danger);
-    padding: 2px 6px;
-    color: var(--color-white);
-    font-size: 11px;
-    border-radius: var(--border-radius-1);
-}
 
 main{
     margin-top: 1.4rem;
@@ -320,7 +261,20 @@ main .new-users .user-list{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
+.graph{
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    margin-bottom: 3rem;    
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 main .new-users .user-list:hover{
     box-shadow: none;
 }
@@ -431,7 +385,7 @@ main .recent-orders a{
     overflow: hidden;
 }
 
-.right-section .user-profile{
+ .user-profile{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -444,18 +398,18 @@ main .recent-orders a{
     transition: all 0.3s ease;
 }
 
-.right-section .user-profile:hover{
+ .user-profile:hover{
     box-shadow: none;
 }
 
-.right-section .user-profile img{
+ .user-profile img{
     width: 11rem;
     height: auto;
     margin-bottom: 0.8rem;
     border-radius: 50%;
 }
 
-.right-section .user-profile h2{
+ .user-profile h2{
     margin-bottom: 0.2rem;
 }
 
@@ -510,30 +464,6 @@ main .recent-orders a{
     display: flex;
 }
 
-.right-section .reminders .notification.deactive .icon{
-    background-color: var(--color-danger);
-}
-
-.right-section .reminders .add-reminder{
-    background-color: var(--color-white);
-    border: 2px dashed var(--color-primary);
-    color: var(--color-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.right-section .reminders .add-reminder:hover{
-    background-color: var(--color-primary);
-    color: white;
-}
-
-.right-section .reminders .add-reminder div{
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-}
 
 @media screen and (max-width: 1200px) {
     .container{

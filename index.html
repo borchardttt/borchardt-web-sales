@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>BWS</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <aside>
+            <div class="toggle">
+                <div >
+                    <img src="images/logoBorchardt.png">
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+        </aside>
+        <!-- Main Content -->
+        <main>
+            <div id="services" class="new-users" style="margin-top: -1rem;">
+                <div class="user-list">
+									<h2>Serviços</h2>
+
+                    <p>Borchardt Web & Sales é uma empresa de Representação Comercial com foco em alavancar vendas e fechar negócios no ramo do varejo e atacado.
+                    </p>
+										<p>Além do serviço comercial, a BWS oferece serviços de Desenvolvimento de Aplicações Web, sejam portais para seu negócio ou aplicações internas para automatizar processos.</p>
+                </div>
+            </div>
+						<div class="graph" style="margin-bottom: 1rem;">
+							<h2>Eficiência do Serviço</h2>
+							<p style="justify-content: center;">O gráfico abaixo mostra o percentual de uma empresa com suas vendas em relação a sua meta para 2023 com a BWS representando suas vendas e o resultado após a representação.</p>
+							<canvas id="salesChart"></canvas>
+					</div>
+
+        </main>
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+            </div>
+            <div class="user-profile">
+                <div class="logo">
+                    <img style="margin: 0 auto" src="images/logoBorchardt.png">
+                    <h2>Borchardt Web <p class="e">&</p>Sales</h2>
+                    <p>Representação Comercial e Desenvolvimento Web</p>
+                </div>
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Contato</h2>
+
+                </div>
+
+                <div class="notification">
+                    <div class="icon">
+                        <a href="https://api.whatsapp.com/send?phone=42988084467">
+                            <i class="fab fa-whatsapp" style="color: white"></i>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Entre em Contato via WhatsApp!</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+								<div class="notification add-reminder">
+									<div class="email-content">
+											<i class="fas fa-envelope"></i>
+											<div class="email-text">
+													<h3>E-mail para contato:</h3>
+													<h3>bwsltdacontato@gmail.com</h3>
+											</div>
+									</div>
+							</div>
+							
+							
+
+            </div>
+
+        </div>
+
+
+    </div>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="orders.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
